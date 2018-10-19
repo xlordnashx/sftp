@@ -4,6 +4,7 @@ set -e
 mkdir -p /config/fail2ban
 mkdir -p /config/userkeys
 mkdir -p /config/sshd/keys
+chmod 666 /dev/null
 
 # Copy default config files if removed
 if [[ ! -e /config/fail2ban/jail.conf ]]; then
